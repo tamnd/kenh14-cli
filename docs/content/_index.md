@@ -1,0 +1,42 @@
+---
+title: "kenh14"
+description: "A command line for kenh14."
+heroTitle: "kenh14, from the command line"
+heroLead: "A command line for kenh14. One pure-Go binary, no API key, output that pipes into the rest of your tools, and a resource-URI driver other programs can address."
+heroPrimaryURL: "/getting-started/quick-start/"
+heroPrimaryText: "Get started"
+---
+
+`kenh14` reads public kenh14 data over plain HTTPS, shapes it into
+clean records, and gets out of your way.
+
+```bash
+kenh14 page <path>            # fetch one page as a record
+kenh14 page <path> -o json    # as JSON, ready for jq
+kenh14 links <path>           # the pages it links to, each addressable
+kenh14 serve --addr :7777     # the same operations over HTTP
+```
+
+There is nothing to sign up for and nothing to run alongside it. Output adapts
+to where it goes: an aligned table on your terminal, JSONL the moment you pipe
+it somewhere.
+
+## Two ways to use it
+
+- **As a command** for reading kenh14 by hand or in a script. Start with
+  the [quick start](/getting-started/quick-start/).
+- **As a resource-URI driver** so a host like
+  [ant](https://github.com/tamnd/ant) can address kenh14 as
+  `kenh14://` URIs and follow links across sites. See
+  [resource URIs](/guides/resource-uris/).
+
+Both are the same code: one operation, declared once, is a CLI command, an HTTP
+route, an MCP tool, and a URI dereference.
+
+## Where to go next
+
+- New here? Read the [introduction](/getting-started/introduction/), then the
+  [quick start](/getting-started/quick-start/).
+- Installing? See [installation](/getting-started/installation/).
+- Doing a specific job? The [guides](/guides/) are task-first.
+- Need every flag? The [CLI reference](/reference/cli/) is the full surface.

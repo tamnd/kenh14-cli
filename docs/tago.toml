@@ -1,0 +1,10 @@
+title       = "kenh14"
+baseURL     = "https://kenh14-cli.tamnd.com/"
+description = "A command line for kenh14."
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/kenh14-cli"
